@@ -3,22 +3,22 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <body>
+
+      <div className="container">
+        <h1>Link and Lift</h1>
+        <form action="/submit" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required/>
+          <input type="text" name="flightInfo" placeholder="Flight Info (Flight Number, Airline)" required/>
+          <input type="text" name="airport" placeholder="Airport" required/>
+          <button type="submit">Find a Match</button>
+        </form>
+        <footer>
+          <p>Share the ride. Split the fare. Save the planet.</p>
+        </footer>
+      </div>
+
+      </body>
   );
 }
 
